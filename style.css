@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+:root {
+    --main-color: cornflowerblue;
+  }
+.blue-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-title {
+    font-size: 50px;
+    color: var(--main-color); 
+    border-bottom: 2px solid var(--main-color); 
+    margin: 20px;
+    font-family: 'Abril Fatface', cursive !important;
+}
+.booking-title::after {
+    content: ".";
+    color: orange;
+}
+.room {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin: 30px 60px;
+    background-color: rgb(226, 232, 235);
+    cursor: pointer;
+}
+.room:hover {
+    box-shadow: 0 0 5px;
+}
+.left {
+    flex: 1;
+}
+.room-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px;
+    font-family:serif;
+}
+.room-title:hover {
+    color: var(--main-color); 
+    transform: scale(1.5);
+}
+.facts-rooms {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.facts-text {
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    padding: 10px 20px;
+}
+.info-text {
+    padding: 20px 80px 40px 80px;
+}
+.right {
+    flex: 1;
+}
+#img-1 {
+    background-image: url(https://www.nissiaholidays.com/wp-content/uploads/2018/10/kafka_bedroom-1140x740.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img-2 {
+    background-image: url(https://www.nissiaholidays.com/wp-content/uploads/2018/09/141219715-2-1140x740.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
